@@ -1,6 +1,6 @@
 Type: Application
 Name: custom-fsharp
-Version: 0.0.1
+Version: 0.0.2
 Provider:
   - Alibaba
 Description: 快速部署一个 fsharp custom runtime 函数到阿里云函数计算

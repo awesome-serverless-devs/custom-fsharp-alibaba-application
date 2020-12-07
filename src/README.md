@@ -12,16 +12,7 @@ Initialization successfully
 ### Deploy
 
 ```bash
-$ cd custom-fsharp && make deploy
-docker run --rm -i -v $(pwd):/tmp mcr.microsoft.com/dotnet/core/sdk:3.1 bash -c "cd /tmp/FSharpDemo && dotnet publish -r linux-x64 -c Release --self-contained true && cd /tmp/FSharpDemo/bin/Release/netcoreapp3.1/linux-x64/publish && mv FSharpDemo bootstrap && chmod +x bootstrap"
-Microsoft (R) Build Engine version 16.7.1+52cd83677 for .NET
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-  Determining projects to restore...
-  Restored /tmp/FSharpDemo/FSharpDemo.fsproj (in 6.13 sec).
-  FSharpDemo -> /tmp/FSharpDemo/bin/Release/netcoreapp3.1/linux-x64/FSharpDemo.dll
-  FSharpDemo -> /tmp/FSharpDemo/bin/Release/netcoreapp3.1/linux-x64/publish/
-s deploy
+$ cd custom-fsharp && s deploy
 
 Start ...
 It is detected that your project has the following project/projects < MyFunctionDemo > to be execute

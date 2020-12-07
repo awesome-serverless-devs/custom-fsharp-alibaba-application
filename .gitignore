@@ -1,0 +1,8 @@
+src/FSharpDemo/obj
+src/FSharpDemo/bin
+src/.vs
+src/NuGetScratch
+src/.NETCoreApp,Version=v3.1.AssemblyAttributes.fs
+src/.dotnet
+
+**/.s

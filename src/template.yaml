@@ -1,0 +1,31 @@
+MyFunctionDemo:
+  Component: fc
+  Provider: alibaba
+  Extends:
+    deploy:
+      - Hook: make build
+        Path: ./
+        Pre: true
+  Properties:
+    Region: cn-hangzhou
+    Service:
+      Name: custom-runtime-demo
+    Function:
+      Name: custom-fsharp
+      CodeUri: FSharpDemo/bin/Release/netcoreapp3.1/linux-x64/publish
+      CAPort: 9000
+      Handler: Program.main
+      MemorySize: 512
+      Runtime: custom
+      Triggers:
+        - Name: http_t
+          Type: HTTP
+          Parameters:
+            AuthType: ANONYMOUS
+            Methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            Domains:
+              - Domain: AUTO

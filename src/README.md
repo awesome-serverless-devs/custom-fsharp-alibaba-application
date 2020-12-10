@@ -49,6 +49,8 @@ This domain name is a temporary domain name. It is only used as a learning test 
 
 The temporary domain name is `37342198-1986114430573743.test.functioncompute.com` in the example above, which could be found on the page of custom domain on the [Function Computer Console](https://fc.console.aliyun.com/).
 
+The route is `weatherforecast` in the example and you can curl `${custom_domain}/weatherforecast` as follows.
+
 ```bash
 $ curl 37342198-1986114430573743.test.functioncompute.com/weatherforecast
 [{"date":"2020-12-07T12:00:13.7163832+00:00","temperatureC":29,"summary":"Mild","temperatureF":84},{"date":"2020-12-08T12:00:13.7181098+00:00","temperatureC":17,"summary":"Warm","temperatureF":62},{"date":"2020-12-09T12:00:13.7181208+00:00","temperatureC":35,"summary":"Freezing","temperatureF":94},{"date":"2020-12-10T12:00:13.7181242+00:00","temperatureC":1,"summary":"Balmy","temperatureF":33},{"date":"2020-12-11T12:00:13.7181246+00:00","temperatureC":-10,"summary":"Freezing","temperatureF":15}]

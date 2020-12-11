@@ -1,20 +1,4 @@
-# 阿里云函数计算：custom-fsharp
+# 阿里云函数计算 F Sharp 案例（Alibaba FC F Sharp Demo）
 
-通过该应用，您可以简单快速地在阿里云函数计算创建一个 custom-fsharp 服务。
-
-- 下载命令行工具：`npm install -g @serverless-devs/s`
-
-- 配置账号信息，以阿里云为例。
-    1. 获取账号Id： https://account.console.aliyun.com/#/secure
-        ![](https://images.serverlessfans.com/s-tool/zh/start-1.jpg)
-    2. 获取密钥信息：https://ram.console.aliyun.com/manage/ak
-        ![](https://images.serverlessfans.com/s-tool/zh/start-2.jpg)
-    3. 通过`s config add`进行项目配置
-        ![](https://images.serverlessfans.com/s-tool/zh/start-3.jpg)
-
-- 初始化一个模版项目：`s init custom-fsharp -p alibaba`
-- 进入项目：`cd custom-fsharp`
-
-- 执行：`s deploy`即可进行部署：
-
-- 至此，我们完成了简单的函数部署功能。
+- [中文文档](./readme_zh.md)
+- [English Document](./readme_en.md)
